@@ -1,0 +1,33 @@
+<div class="page-sidebar navbar-collapse collapse">
+	<!-- add "navbar-no-scroll" class to disable the scrolling of the sidebar menu -->
+	<!-- BEGIN SIDEBAR MENU -->
+	<ul class="page-sidebar-menu" data-auto-scroll="true"
+		data-slide-speed="200">
+		<li class="sidebar-toggler-wrapper">
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+			<div class="sidebar-toggler hidden-phone"></div> <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+		</li>
+		<li class="sidebar-search-wrapper">
+			<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+			<form class="sidebar-search" action="extra_search.html" method="POST">
+				<div class="form-container">
+					<div class="input-box">
+						<a href="javascript:;" class="remove"></a> <input type="text"
+							placeholder="Search..." /> <input type="button" class="submit"
+							value=" " />
+					</div>
+				</div>
+			</form> <!-- END RESPONSIVE QUICK SEARCH FORM -->
+		</li>
+		
+		<% if(navpermission.siteAdministration){ %>
+		<li><a href="javascript:;"><i class="fa fa-pencil-square-o"></i><span
+				class="title"> Site Administration </span><span class="arrow "></span></a>
+			<ul class="sub-menu">
+				<li><a href="#"><i class="fa fa-hand-o-right"></i>User
+						Accounts </a></li>
+			</ul></li>
+			<% } %>	
+	</ul>
+	<!-- END SIDEBAR MENU -->
+</div>
